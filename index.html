@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mico Hospital</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+        $(document).ready(function(){
+      $("button").click(function(){
+        $("#navbarNav").toggle(3000);
+      });
+    });
+  </script>
+  <script>
+    function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
+</script>
+  <style>
+    .form-group ::placeholder
+       {
+            color: #53C2A1;
+            opacity: 1;
+            font-size: .8rem;
+        }
+        
+     body{
+      position: relative;
+     }   
+       
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand nav" href="#">
+      <img src="img/mico-psd_03.jpg" width="30" height="30" alt="Your Logo">
+      
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#treatment">TREATMENT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#doctors">DOCTORS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonal">TESTIMONIAL</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="#contactus">CONTACT US</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item" >
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="#">Sign Up</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: #fff;">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!--slider-->
+
+
+      <div id="demo" class="carousel slide d-block w-100 " data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner " style="padding: 0em;">
+          <div class="carousel-item active c-item">
+            <img src="img/slide111 (1).jpg" alt="Los Angeles" class=" d-block w-100 c-img">
+            <div class="carousel-caption  d-md-block text">
+              <h3 style="color: #00C7AA;"><span style="color: #00C7AA;font-weight: bold;">MICO</span><br>HOSPITAL</h3>
+              <p>when looling at its layout. The point of using Lorem Ipsum is that it has a<br>more-or-less normal distribution of letters, as oppset to</p>
+              <button class="btn btn-outline-success">CONTACT US</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="img/slide111 (2).jpg" alt="Chicago" class=" d-block w-100 c-img">
+            <div class="carousel-caption d-md-block text">
+              <h3 style="color: #00C7AA;"><span style="color: #00C7AA;font-weight: bold;">MICO</span><br>HOSPITAL</h3>
+              <p>when looling at its layout. The point of using Lorem Ipsum is that it has a<br>more-or-less normal distribution of letters, as oppset to</p>
+              <button class="btn btn-outline-success">CONTACT US</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="img/slide111 (3).jpg" alt="New York" class=" d-block w-100 c-img">
+            <div class="carousel-caption  d-md-block text">
+              <h3 style="color: #00C7AA;"><span style="color: #00C7AA;font-weight: bold;">MICO</span><br>HOSPITAL</h3>
+              <p>when looling at its layout. The point of using Lorem Ipsum is that it has a<br>more-or-less normal distribution of letters, as oppset to</p>
+              <button class="btn btn-outline-success">CONTACT US</button>
+            </div>
+
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev " href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+   
+
+  <!----book appointment-->
+
+  <div class="container reveal" style="box-shadow: none; " id="aappointment" >
+    <form>
+      <h2>Book <span style="color: #00C6A9;">Appointment</span></h2>
+      <div class="row">
+        <div class="col-md-4">
+         <div class="form-group">
+            <label for="patientName">Patient Name</label>
+            <input type="text" class="form-control" id="patientName" placeholder="Enter patient name" required>
+         </div>
+         <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number" required>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+            <label for="doctorName">Doctor's Name</label>
+            <input type="text" class="form-control" id="doctorName" placeholder="Enter doctor's name" required>
+        </div>
+        <div class="form-group">
+            <label for="symptoms">Symptoms</label>
+            <textarea class="form-control" id="symptoms" rows="2" placeholder="Enter symptoms" required></textarea>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+            <label for="department">Department</label>
+            <input type="text" class="form-control" id="department" placeholder="Enter department" required>
+        </div>
+        
+        
+        <div class="form-group">
+            <label for="appointmentDate">Appointment Date</label>
+            <input type="date" class="form-control" id="appointmentDate" required>
+        </div>
+      </div>
+      </div>
+      <input type="button" name="submit" value="SUBMIT NOW" id="app_button">
+    </form>
+    
+
+
+</div><br><br>
+
+
+  <!----about hospital-->
+  <div class="container reveal" style="box-shadow: none;" id="about">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="img/mico-psd_07.jpg" alt="Hospital Image" class="about-image" >
+        </div>
+        <div class="col-md-6 about-section" >
+            <div class="about-text">
+                <h2>About<span style="color: #00C6A9;"> Hospital</span></h2>
+                <p class="about_p">
+                  has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors  has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors 
+                </p>
+                <input type="button" name="readmore" value="READ MORE" style="margin-left: 0px;">
+                
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <!----end about hospital-->
+
+    <!----hospital-->
+
+    <div class="container reveal"style="box-shadow: none;" id="treatment">
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <h2>Hospital Treatment</h2><br><br>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-3 treatment-column">
+              <img src="img/mico-psd_13.jpg" alt="Logo 1" class="treatment-logo">
+              <h3 class="treatment-header">Nephrologist Care</h3>
+              <p class="treatment-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ligula eu arcu consectetur ullamcorper.
+              </p>
+              <a href="#" class=" read-more-btn">Read More</a>
+          </div>
+          <div class="col-md-3 treatment-column">
+              <img src="img/mico-psd_15.jpg" alt="Logo 2" class="treatment-logo">
+              <h3 class="treatment-header">Eye Care</h3>
+              <p class="treatment-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ligula eu arcu consectetur ullamcorper.
+              </p>
+              <a href="#" class=" read-more-btn">Read More</a>
+          </div>
+          <div class="col-md-3 treatment-column">
+              <img src="img/mico-psd_17.jpg" alt="Logo 3" class="treatment-logo">
+              <h3 class="treatment-header">Pediatrician Clinic</h3>
+              <p class="treatment-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ligula eu arcu consectetur ullamcorper.
+              </p>
+              <a href="#" class=" read-more-btn">Read More</a>
+          </div>
+          <div class="col-md-3 treatment-column">
+              <img src="img/mico-psd_11.jpg" alt="Logo 4" class="treatment-logo">
+              <h3 class="treatment-header">Parental Care</h3>
+              <p class="treatment-paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ligula eu arcu consectetur ullamcorper.
+              </p>
+              <a href="#" class=" read-more-btn">Read More</a>
+          </div>
+      </div>
+  </div>
+
+      <!----end hospital-->
+
+      <!--card slide-->
+      <div class="container-fluid reveal" style="box-shadow: none;background-color: #00C7AA;" id="doctors">
+        <div class="card_header">
+          <h2 style="color: #fff;font-weight: bold;text-align: center;padding-top: 50px;"><span style="color: #131313;font-weight: bold;">OUR </span>DOCTOR</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="cards-wrapper">
+                  <div class="card">
+                    <img src="img/mico-psd_31.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title card_h5">Hennry</h5>
+                      <p class="card-text">MBBS</p>
+                     
+                          <div class="card_icon">
+                            <ul><a href="#"><li class="fab fa-facebook-f" ></li></a></ul>
+                            <ul><a href="#"><li class="fab fa-twitter"></li></a></ul>
+                            <ul><a href="#"><li class="fab fa-linkedin-in"></li></a></ul>
+                            <ul><a href="#"><li class="fab fa-instagram"></li></a></ul>
+                        </div>
+                       
+                     
+                     
+                      
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img src="img/mico-psd_33.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title card_h5">Jenni</h5>
+                      <p class="card-text">MBBS</p>
+                      <div class="card_icon">
+                        <ul><a href="#"><li class="fab fa-facebook-f" ></li></a></ul>
+                        <ul><a href="#"><li class="fab fa-twitter"></li></a></ul>
+                        <ul><a href="#"><li class="fab fa-linkedin-in"></li></a></ul>
+                        <ul><a href="#"><li class="fab fa-instagram"></li></a></ul>
+                    </div>
+                      
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img src="img/mico-psd_28.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title card_h5">Morco</h5>
+                      <p class="card-text">MBBS</p>
+                      <div class="card_icon">
+                        <ul><a href="#"><li class="fab fa-facebook-f" ></li></a></ul>
+                        <ul><a href="#"><li class="fab fa-twitter"></li></a></ul>
+                        <ul><a href="#"><li class="fab fa-linkedin-in"></li></a></ul>
+                        <ul><a href="#"><li class="fab fa-instagram"></li></a></ul>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="cards-wrapper">
+                    <div class="card">
+                      <img src="img/mico-psd_31.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title card_h5" >Hennry</h5>
+                        <p class="card-text">MBBS</p>
+                        <div class="card_icon">
+                          <ul><a href="#"><li class="fab fa-facebook-f" ></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-twitter"></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-linkedin-in"></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-instagram"></li></a></ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                      <img src="img/mico-psd_33.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title card_h5">Jenni</h5>
+                        <p class="card-text">MBBS</p>
+                        <div class="card_icon">
+                          <ul><a href="#"><li class="fab fa-facebook-f" ></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-twitter"></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-linkedin-in"></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-instagram"></li></a></ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                      <img src="img/mico-psd_28.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title card_h5">Morco</h5>
+                        <p class="card-text">MBBS</p>
+                        <div class="card_icon">
+                          <ul><a href="#"><li class="fab fa-facebook-f" ></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-twitter"></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-linkedin-in"></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-instagram"></li></a></ul>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="cards-wrapper">
+                    <div class="card">
+                      <img src="img/mico-psd_31.jpg" class="card-img-top" alt="nophoto">
+                      <div class="card-body">
+                        <h5 class="card-title card_h5">Hennry</h5>
+                        <p class="card-text">MBBS</p>
+                        <div class="card_icon">
+                          <ul><a href="#"><li class="fab fa-facebook-f" ></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-twitter"></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-linkedin-in"></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-instagram"></li></a></ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                      <img src="img/mico-psd_33.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title card_h5">Jenni</h5>
+                        <p class="card-text">MBBS</p>
+                        <div class="card_icon">
+                          <ul><a href="#"><li class="fab fa-facebook-f" ></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-twitter"></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-linkedin-in"></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-instagram"></li></a></ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="card d-none d-md-block">
+                      <img src="img/mico-psd_28.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title card_h5">Morco</h5>
+                        <p class="card-text">MBBS</p>
+                        <div class="card_icon">
+                          <ul><a href="#"><li class="fab fa-facebook-f" ></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-twitter"></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-linkedin-in"></li></a></ul>
+                          <ul><a href="#"><li class="fab fa-instagram"></li></a></ul>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end card slide-->
+
+
+      <!----start testmonial-->
+
+      <div class="testmonail reveal" id="testmonail">
+        <div class="testmonial_header"><h2 style="text-align: left; font-family: Arial, Helvetica, sans-serif bold;color: #00C6A9;margin-top: 50px;margin-left: 50px;">TESTIMONIAL</h2></div>
+        <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <span style="color: #00C5A8;font-size: 20px;font-weight: bold;"><p class=" mt-2">Morijorch</p></span>
+           <p style="margin-top: -15px;font-size: small;color: #C3C4C4;">Defult Model Text</p>
+           <div id="text-slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" style="text-align: left;font-size: 16px;">
+                <div class="carousel-item active">
+                    <p>editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                </div>
+                <div class="carousel-item">
+                    <p>editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                </div>
+                <div class="carousel-item">
+                    <p>editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#text-slider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#text-slider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+              </div>
+          </div>
+       </div>
+      </div>
+       <!----end testmonial-->
+
+        <!----start get in tuch-->
+      
+          <div class="container mt-5 reveal"style="box-shadow: none;" id="getin">
+          <div class="row">
+              
+              <div class="col-md-6 ">
+                  <h2 class="" style="font-weight: bold;">Get in Touch</h2><br>
+                  <form id="contact-form">
+                      <div class="form-group">
+                          
+                          <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                      </div>
+                      <div class="form-group">
+                         
+                          <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                      </div>
+                       <div class="form-group">
+                          
+                         <input type="text" class="form-control" id="contact" placeholder="Your Phone Number "required>
+                      </div>
+                      <div class="form-group">
+                          
+                          <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                      </div>
+                      <input type="submit" name="send" value="SEND">
+                     
+                  </form>
+              </div>
+              <div class="col-md-6 text-center">
+                  <img src="img/mico-psd_38.jpg" alt="nophoto" >
+              </div>
+          </div>
+      </div>
+     
+         <!----end get in tuch-->
+
+
+        <!---start footer-->
+        <footer class="footer reveal" id="contactus">
+          <div class="container"style="box-shadow: none;background-color: #252525;">
+                 <div class="row">
+                     <div class="col-md-3 footer-logo">
+                       <img src="img/mico-psd_41.jpg" alt="nophoto">
+                     </div>
+                     <div class="col-md-9">
+                          <div class="search position-relative">
+                             <input class="form-control f-form" placeholder="Your email"style="background-color: #252525;border: none;border-bottom: 2px solid #606060;">
+                             <button class="position-absolute sbutton">SUBSCRIBE</button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         <div class="container-fluid  f-grid"style="box-shadow: none;background-color: #252525;">
+            
+             <div class="row" >
+                 <!-- Column 1: Address -->
+                 <div class="col-md-3">
+                     <h4><div style="height: 20px;width: 20px; background-color: #00C7AA;float: left; margin-right: 5px; margin-top: 6px;"></div>Address</h4>
+                     <ul>
+                         <div class="location">
+                             <i class="fas fa-map-marker-alt" style="color: #fff;"><span style="font-weight: normal; margin-left: 5px;"> Making this the first true</span></i><br>
+                            <i class="fas fa-phone"style="color: #fff;"> <span style="font-weight: normal;margin-left: 5px;">Call: +880 1770-749591</span></i><br>
+                             <i class="fas fa-envelope"style="color: #fff;"> <span style="font-weight: normal;margin-left: 5px;">subroto2021@gmail.com</span></i><br>
+ 
+                         </div><br>
+                        
+                      <a href="#"> <i class="fab fa-facebook-f" style="color: #53C2A1;padding: 0px 10px 0px 0px;"></i></a>
+                        <a href="#"><i class="fab fa-twitter"style="color: #53C2A1;padding: 0px 10px 0px 0px;"></i></a>
+                         <a href="#"><i class="fab fa-linkedin-in"style="color: #53C2A1;padding: 0px 10px 0px 0px;"></i></a>
+                         <a href="#"><i class="fab fa-instagram"style="color: #53C2A1;padding: 0px 10px 0px 0px;"></i></a>
+                     </ul>
+                 </div>
+                 <!-- Column 2: Useful Links -->
+                 <div class="col-md-3">
+                     <h4><div style="height: 20px;width: 20px; background-color: #00C7AA;float: left; margin-right: 5px; margin-top: 6px;"></div>Useful Links</h4>
+                     <ul>
+                         <li><a href="#">Home</a></li>
+                         <li><a href="#">About</a></li>
+                         <li><a href="#">Doctors</a></li>
+                         <li><a href="#">News</a></li>
+                         <li><a href="#">Treatment</a></li>
+                         <li><a href="#">Contact</a></li>
+                     </ul>
+                 </div>
+                 <!-- Column 3: Image and Text -->
+                 <div class="col-md-3">
+                     <h4><div style="height: 20px;width: 20px; background-color: #00C7AA;float: left; margin-right: 5px; margin-top: 6px;"></div>latest post</h4>
+                     <img src="img/mico-psd_45.jpg" alt="Image" class="img-fluid" style="float: left;">
+                     <p>&nbsp; &nbsp; Normal Distribution</p><br>
+                     <img src="img/mico-psd_52.jpg" alt="Image" class="img-fluid" style="float: left;">
+                     <p>&nbsp; &nbsp; Normal Distribution</p><br>
+                     <img src="img/mico-psd_45.jpg" alt="Image" class="img-fluid" style="float: left;">
+                     <p>&nbsp; &nbsp; Normal Distribution</p><br>
+                 </div>
+                 <!-- Column 4: Normal Distribution -->
+                 <div class="col-md-3">
+                     <h4><div style="height: 20px;width: 20px; background-color: #00C7AA;float: left; margin-right: 5px; margin-top: 6px;"></div>news</h4>
+                     <img src="img/mico-psd_45.jpg" alt="Image" class="img-fluid" style="float: left;">
+                     <p>&nbsp; &nbsp; Normal Distribution</p><br>
+                     <img src="img/mico-psd_52.jpg" alt="Image" class="img-fluid" style="float: left;">
+                     <p>&nbsp; &nbsp; Normal Distribution</p><br>
+                 </div>
+             </div>
+         </div>
+         <div class="copyright" >&copy;Copyright 2023 design by free html template</div>
+     </footer>
+         
+ 
+
+  <!-- Add Bootstrap JS and jQuery links -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

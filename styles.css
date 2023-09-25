@@ -1,0 +1,453 @@
+/* styles.css */
+/*navbar logo*/
+.nav {
+    width: auto;
+    height: 80px;
+    font-size: 16px;
+    
+}
+
+.nav img{
+    width: 120px;
+    height: 96px;
+    margin-top: -13px;
+    
+}
+.navbar-light{
+    background-color: #00C6A9;
+    
+    
+}
+.navbar-light .navbar-nav .nav-item .nav-link{
+    color: white;
+}
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.list-group-item {
+    text-align: center;
+}
+
+.list-group-item a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #007bff;
+}
+
+.list-group-item a:hover {
+    color: #0056b3;
+}
+
+/* styles.css */
+
+.text-slider {
+    text-align: center;
+    overflow: hidden;
+    height: 60px; /* Set the desired height for the slide */
+}
+
+.slide-text {
+    font-size: 36px; /* Set the font size for the slide text */
+    margin-top: 0;
+    padding-top: 20px; /* Adjust as needed */
+    animation: slide 5s infinite alternate linear;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* for form*/
+
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.carousel-caption .btn-outline-success{
+    color: white;
+    border: 2px solid #00C6A9;
+}
+.carousel-caption .btn-outline-success:hover{
+   background-color: #00C7AA;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+/* about hospital*/
+.about-section {
+    margin-top: 10px;
+    background-color: #fff; /* Change the background color as needed */
+}
+.reveal .about-image {
+   width: 283px;
+   height: 300px;
+   margin-left: 50px;
+}
+.about-text {
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+.about-text h2 {
+    font-size: 28px; /* Adjust the font size as needed */
+}
+.about-text p {
+    font-size: 16px; /* Adjust the font size as needed */
+}
+.read-more-btn {
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+/*hospital tretment*/
+.treatment-section {
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Change the background color as needed */
+}
+.treatment-column {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.treatment-logo {
+    max-width: 100px; /* Adjust the logo width as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+.treatment-header {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+.treatment-paragraph {
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+.read-more-btn {
+    color: #00C7AA;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+/* Custom styles for the slideshow */
+.slideshow {
+    overflow: hidden;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.text-slide {
+    display: none;
+}
+
+/* Custom CSS for Bootstrap */
+.container {
+    margin-top: 20px;
+}
+/*for get in touch*/
+input[type=submit]{
+    width: 180px;
+    height: 60px;
+    color: white;
+    background-color: #53C2A1;
+    font-weight: bold;
+    border: none;
+}
+input[type=date]{
+   
+    color: #53C2A1;
+    
+}
+  .form-group ::placeholder
+  {
+            color: #53C2A1;
+            opacity: 1;
+            font-size: .8rem;
+}
+/*app_button*/
+input[type=button]{
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: #252525;
+    font-weight: normal;
+    border: none;
+    font-size: small;
+    margin-left: 15px;
+    
+}
+input[type=button]:hover{
+    
+    background-color: #00C6A9;
+    transition: 0.5s;
+    
+}
+/*style for footer*/
+
+/* Custom CSS for the footer */
+.footer {
+    background-color: #252525;
+    
+   
+}
+
+.footer h4 {
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer ul li a:hover{
+    color: #53C2A1;
+    transition: 0.5s;
+}
+.footer p{
+    color: #fff;
+}
+.location li{
+    font-weight: normal;
+}
+.footer img{
+    width: 40px;
+    height: 40px;
+}
+.footer-logo img{
+    width: 100px;
+    height: 100px;
+    padding-top: 0px;
+    margin-top: -30px;
+}
+.footer input[type=email]{
+    border: none;
+    border-bottom: 2px solid #606060;
+    background-color: #252525;
+}
+/*subscribe button*/
+.search .f-form{
+border:none;
+border-bottom: 2px solid #4D4D4D;
+background-color:#252525;
+font-size:normal;
+ color: #fff;
+
+
+}
+
+.search .f-form:focus{
+    background-color:#252525;
+    box-shadow:none;
+    border:none;
+    border-bottom: 2px solid #4D4D4D;
+     color: #fff;
+    
+}
+.search .sbutton{
+    border: none;
+    color: #53C2A1;
+    top:10px;
+    width:120px;
+    height:25px;
+    right:10px;
+    font-size:14px;
+    font-weight: bold;
+    background-color: #252525;
+    
+}
+.search .sbutton:focus{
+  outline: none;
+}
+.footer .copyright{
+    color: #A5A5A6;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    
+}
+/*card slide*/
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+  }
+ 
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+    width: 250px;
+    height: 300px;
+   
+  }
+  .card_header h2{
+    margin-bottom: 30px;
+  }
+  .card-body h5{
+    text-align: center;
+    font-weight: bold;
+  }
+  .card img{
+   width: 200px;
+   height: 200px;
+   margin-left: 25px;
+   margin-top: -25px;
+  }
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #fff;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: 150px;
+    transform: translateY(-50%);
+  }
+  .card-body p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #00C7AA;
+    margin-top: -10px;
+  }
+ .card-body .card_icon {
+    display: flex;
+   justify-content: center;
+   margin-right: 25px;
+  
+   
+ 
+ }
+ .card-body .card_icon a{
+    color: #131313;
+    
+    
+ }
+ /*getin touch*/
+ #getin img{
+    width: 283px;
+    height: 300px;
+    margin-top: 50px;
+ }
+ /*for slide show*/
+.carousel-inner .c-item{
+    height: 500px;
+    
+   
+}
+ .carousel-inner .c-item .text{
+    position: absolute;
+  
+    width:auto;
+    
+ }
+.c-item .c-img{
+   
+  object-fit: cover;
+   
+    filter: brightness(0.6);
+}
+
+
+/*for scroll*/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+
+/*end of footer style*/
+@media only screen and (max-width: 480px) {
+    
+    .container .treatment-column{
+        text-align: center;
+    }
+    
+    .c-item{
+        max-height: 267px;
+    }
+    
+    .c-item .text{
+        display: none;
+        margin: 0px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .c-item{
+        max-height: 400px;
+    }
+    .c-item .text{
+        display: none;
+        margin: 0px;
+    }
+    #contactus{
+       
+        
+    }
+    #contactus .col-md-3{
+        padding: 0px 10px;
+        font-size: 14px;
+        
+    }
+    .f-grid{
+        margin: 0auto;
+    }
+}
+@media only screen and (min-width: 991px) {
+    .c-item{
+        max-height:600px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .c-item{
+        max-height:600px;
+    }
+}
